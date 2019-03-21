@@ -15,7 +15,6 @@ h1, h4, a {
 html, body {
     margin: 0px;
     padding: 0px;
-    width: 100vw;
 }
 /*-----------------Header-----------------------*/
 header {
@@ -52,7 +51,7 @@ header li:hover {
     top: 50px;
 }
 .home {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
 }
@@ -188,7 +187,7 @@ header li:hover {
 .contact-icon {
     width: 130px;
     height: 130px;
-    margin: 40px 40px;
+    margin: 40px 30px;
     border-radius: 50%;
     font-size: auto;
     color: #fff;
