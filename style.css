@@ -1,3 +1,234 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
 h1 {
-    color: orange;
+    text-align: center;
+    margin: 20px auto;
+}
+p {
+    font-family: 'Archive Narrow', Impact, sans-serif;
+}
+h1, h4, a {
+    font-family: 'Montserrat', Arial, Helvetica;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+/*-----------------Header-----------------------*/
+header {
+    position: fixed;
+    display: grid;  
+    grid-template-columns: 40% 60%;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: black;
+}
+header p {
+    padding: 0px 20px;
+    color: white;
+}
+header ul {
+    text-align: right;
+}
+header li {
+    display: inline;
+    padding: 15px 20px;
+}
+header li a {
+    color: white;
+}
+header li:hover {
+    border: 2px solid white;
+}
+/*-----------------Content-----------------------*/
+/*-----------------Homepage-----------------------*/
+.content {
+    position: relative;
+    top: 50px;
+}
+.home {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#home-tag {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+#home-tagline {
+    font-size: 60px;
+    margin: 10px;
+    background-color:gray;
+    color: white;
+}
+#home-motto {
+    font-size: 30px;
+    margin: 10px;
+    background-color:gray;
+    color: white;
+    padding: 5px;
+}
+#home-back-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: whitesmoke;
+}
+.home h1 {
+    top: 30%;
+    z-index: 2;
+    position: absolute;
+}
+.home p {
+    top: 50%;
+    z-index: 3;
+    position: absolute;
+}
+/*-----------------Portfolio-----------------------*/
+/* .portfolio, .about-me, .contact {
+    height: 100vh;
+} */
+.project-tiles {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    background-color: grey;
+}
+.project-tile {
+    background-color: whitesmoke;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    grid-template-rows: 200px 20px 130px;
+    grid-template-columns: 300px;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px whitesmoke;
+
+}
+.project-tile, .project-tile-img {
+    border-radius: 20px;
+}
+.project-tile-img {
+    width: 100%;
+}
+.project-title {
+    font-size: 22px;
+}
+/* ----------- About ---------- */
+.about-content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    width: 100%;
+}
+.about-resume {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    padding: 20px;
+    justify-items: center;
+    align-items : center;
+}
+.about-resume p {
+    padding: 10px;
+    text-align: justify;
+}
+.about-resume-img {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.about-history {
+    padding: 20px;
+    background-color: whitesmoke;
+}
+.about-history-one {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.about-history-date, .about-history-position, .about-history-desc {
+    margin: 0px;
+}
+.about-history-position {
+    font-size: 18px;
+    font-weight: bold;
+}
+.about-history-date {
+    font-size: 13px;
+}
+.about-history-desc {
+    text-align: justify;
+}
+/* ---------- Contact --------- */
+.contact {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    margin: 0 20px;
+    background-color: gray;
+}
+.contact-icon {
+    width: 130px;
+    height: 130px;
+    margin: 40px 40px;
+    border-radius: 50%;
+    font-size: auto;
+    color: #fff;
+    line-height: 120px;
+    text-align: center;
+    background: #000;
+}
+.contact-icon:hover {
+    opacity: 0.5;
+}
+footer {
+    background-color: black;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+footer h3 {
+    color: white;
+}
+@media only screen and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    header li {
+        display: none;
+    }
+    #home-tag {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    #home-tagline {
+        top: 20vh;
+    }
+    #home-motto {
+        top: 60vh;
+    }
+    .about-content {
+      display: flex;
+      flex-direction: column;
+    }
 }

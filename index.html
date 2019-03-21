@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <title>RobbyCP</title>
 </head>
 <body>
-    <h1>Hello World! From Robby</h1>
+    <header>
+        <p>RobbyCP</p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <section class="home" id="home">
+            <div id="home-back-img"></div>
+            <div id="home-tag">
+                <h1 id="home-tagline">Developer with Purpose</h1>
+                <p id="home-motto">Grit is my middle name</p>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h1>Portfolio</h1>
+            <div class="project-tiles">
+                <div class="project-tile">
+                    <img class="project-tile-img" src="./img/data-pertanian.png">
+                    <h4 class="project-title">Data Pertanian</h4>
+                    <p>Scraping and wrangling database site of Kementrian Pertanian for more than 10K table using python, and visualize it using Tableau.</p>
+                    <p><a href="http://bit.ly/data-pertanian-Indonesia" target="_blank">Learn more</a></p>
+                </div>
+                <div class="project-tile">
+                    <img class="project-tile-img" src="./img/portfolio-website.png">
+                    <h4 class="project-title">Portfolio 1.0</h4>
+                    <p>Building my very first portfolio website using only HTML and CSS (using grid and flex). Also it's mobile friendly</p>
+                    <p><a href="https://github.com/robbycp/robbycp.github.io" target="_blank">Learn more</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="about-me" id="about-me">
+            <h1>Who am I?</h1>
+            <div class="about-content">
+                <div class="about-resume">
+                    <img class="about-resume-img" src="./img/pas-foto2.jpg">
+                    <p>A highly motivated graduate from materials engineering Bandung Institute of Technology with a good skills in leadership, data analytics in business, marketing and fraud. A startup enthusiast who learn about data science processes and learned Python, machine learning, Tableau, and Programming. Joined startups in education and fintech, leadership programs, and active in social movements. Really interested in entrepreneurship world. Has an experience in to start a business in cold pressed juice company, Jusee, as co-founder and chief operating officer.</p>
+                </div>
+                <div class="about-history">
+                    <div class="about-history-one">
+                        <p class="about-history-position">Hacktiv8 : Student</p>
+                        <p class="about-history-date">2019 Mar - Present</p>
+                        <p class="about-history-desc">Joining Full Stack Immersive Program. Learning HTML, CSS, Javascript</p>
+                    </div>
+                    <div class="about-history-one">
+                        <p class="about-history-position">Midtrans - Gojek : Fraud Analyst</p>
+                        <p class="about-history-date">2018 Mar - 2019 Mar</p>
+                        <p class="about-history-desc">Monitor fraudsters behaviour in one specific industry or merchant and do prevention actions . Make an automation for fraud report and data fraud request for existing merchant using Tableau, python, and Excel. Mitigate risk for chargeback, dispute, and fraud information from Bank or merchant fraud report. Investigate background profile, history, business process, and product of new merchant to look for any fraud or dispute possibilities in the future from many industries. Best employee of the month in August.</p>
+                    </div>
+                    <div class="about-history-one">
+                        <p class="about-history-position">EasyPay : Data Analyst</p>
+                        <p class="about-history-date">2017 Jun - 2018 Mar</p>
+                        <p class="about-history-desc">Made monthly, weekly, daily report to summarize how's the transaction, categorized by product and points of sales (and all category in point of sales). Analyzed customer (buying behavior, churn, returning, existing), point of sales (transaction evolution in week), canvasser and sales performance, and marketing performance, using advanced excel (formula and pivot table) with python for details and deep analysis. Improved database management and architecture in customer and point of sales by cleaning the data and made relations across database (using python script and advanced excel) across division within company so that it could be analyzed easily and faster.</p>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1>Reach Me</h1>
+            <div class="contact-all">
+                <a href=""><p class="contact-call">robbycaesar@gmail.com</p></a>
+                <p class="contact-call">082122288387</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/robbycp/" target="_blank"><p class="contact-icon">linkedin</p></a>
+                    <a href="https://github.com/robbycp" target="_blank"><p class="contact-icon">Github</p></a>
+                    <a href="https://www.freecodecamp.org/kudaterbang" target="_blank"><p class="contact-icon">FreeCodeCamp</p></a>
+                    <a href="https://www.instagram.com/robbycp/" target="_blank"><p class="contact-icon">Instagram</p></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h3>Copyright Robbycp 2019</h3>
+    </footer>
 </body>
 </html>
